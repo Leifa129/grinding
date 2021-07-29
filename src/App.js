@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import Header from './Header/Header';
+import Recipes from './Recipes/Recipes';
+import ShoppingList from './Shopping-list/ShoppingList';
+import React, {useState} from 'react';
 
 function App() {
+    const [selectedComponent, setSelectedComponent] = useState('recipes');
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+        <Header recipesClicked = {() => {setSelectedComponent('recipes')}} shoppingListClicked = {() => setSelectedComponent('shopping-list')} />
+        <Recipes selectedComponent={selectedComponent} />
+        <ShoppingList selectedComponent={selectedComponent} />
+
     </div>
   );
 }

@@ -1,0 +1,62 @@
+.App {
+
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  height: 50px;
+  align-items: center;
+}
+
+.start {
+  display: flex;
+  height: 100%;
+}
+
+.center {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+.end {
+  display: flex;
+  height: 100%;
+}
+
+.sidebar {
+  width: 50px;
+  background-color: gray;
+}
+
+.home {
+  width: 100px;
+  background-color: red;
+}
+
+.search-bar {
+    height: 38%;
+}
+
+.search-btn {
+  width: 50px;
+  height: 50%;
+  background-color: aqua;
+}
+
+.upload {
+  width: 50px;
+  background-color: blueviolet;
+}
+
+.notifications {
+  width: 50px;
+  background-color: sandybrown;
+}
+
+.profile {
+ width: 50px;
+  background-color: chartreuse;
+}
